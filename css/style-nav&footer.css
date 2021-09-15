@@ -1,0 +1,147 @@
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-wrap {
+    width: 100%;
+    background-color: white;
+}
+
+.nav-box {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav-logo-box {
+    height: 67px;
+}
+
+.nav-category-box-list {
+    padding: 23px 36px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-category-box li:last-child {
+    background: url(../Images/category-search-icon.png) no-repeat;
+    padding: 10px;
+    margin-top: 24px;
+}
+
+
+.footer-wrap {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+}
+
+.footer-box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    position: relative;
+    width: 70px;
+    margin-top: 20px;
+}
+
+.footer-logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+.footer-logo-ico1 {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+}
+
+.footer-logo-ico2 {
+    width: 17px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.footer-address-list {
+    font-size: 14px;
+    color: #fff;
+    opacity: .7;
+    position: relative;
+    padding-right: 30px;
+    margin: 5px 0;
+}
+
+.footer-address-list-line {
+    width: 1px;
+    height: 12px;
+    background-color: #fff;
+    opacity: .3;
+    position: absolute;
+    top: 4px;
+    right: 13px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #fff;
+    opacity: .5;
+    margin-top: 2px;
+}
+
+.footer-related-box {
+    float: right;
+    border-bottom: 1px solid #616263;
+    position: relative;
+    right: 0;
+    bottom: 50px;
+    padding-bottom: 6px;
+}
+
+.footer-related-box-content {
+    font-size: 16px;
+    color: #fff;
+    opacity: .9;
+    margin-right: 50px;
+}
+
+.footer-related-box-ico {
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(135deg);
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1234px) {
+    
+    .nav-logo-box {
+        padding: 10px 0 14px 20px;
+        height: auto;
+    }
+
+    .nav-category-box li {
+        display: none;       
+    }
+
+    .nav-category-box li:last-child {
+        display: list-item;
+        padding: 15px;
+        background-size: 35px;
+        margin: 23px 10px 0 0;
+    }
+}
+
