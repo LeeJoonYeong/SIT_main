@@ -16,20 +16,27 @@ nav {
 
 .nav-logo-box {
     height: 67px;
+    padding: 7px 0;
 }
 
-.nav-category-box-list {
+.nav-category-box li {
     padding: 23px 36px;
     font-size: 15px;
     font-weight: bold;
 }
 
-.nav-category-box li:last-child {
-    background: url(../Images/category-search-icon.png) no-repeat;
+.nav-category-box li:nth-last-child(2){
+    background: url(../Images/bt_m_search.png) no-repeat;
     padding: 10px;
     margin-top: 24px;
 }
 
+.nav-category-box li:last-child {
+    display: none;
+    background: url(../Images/bt_mobile_menu.png) no-repeat;
+    padding: 10px;
+    margin-top: 24px;
+}
 
 .footer-wrap {
     background-color: #000;
@@ -133,15 +140,33 @@ nav {
         height: auto;
     }
 
+    .nav-category-box {
+        padding: 18px 0;
+    }
+
     .nav-category-box li {
         display: none;       
     }
 
+    .nav-category-box li:nth-last-child(2),
     .nav-category-box li:last-child {
         display: list-item;
-        padding: 15px;
-        background-size: 35px;
-        margin: 23px 10px 0 0;
+        padding: 20px;
+        background-size: 45px;
+        margin: 0 14px 0 0;
+    }
+
+    .footer-box {
+        padding: 0 20px;
+    }
+
+    .footer-related-box {
+        display: block;
+        float: none;
+        right: auto;
+        bottom: auto;
+        margin-bottom: 20px;
+        display: inline-block;
     }
 }
 
