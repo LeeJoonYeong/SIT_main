@@ -169,7 +169,7 @@ footer {
     }
 
     .nav-wrap .category-box {
-        padding: 18px 0;
+        padding: 18px 20px;
     }
 
     .nav-wrap .category-box ul li {
@@ -182,10 +182,13 @@ footer {
 
     .nav-wrap .category-box .search-ico,
     .nav-wrap .category-box .menu-ico {
-        display: list-item;
-        padding: 20px;
-        background-size: 45px;
-        margin: 0 14px 0 0;
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        background-size: 25px;
+        background-position: right;
     }
 
     .footer-wrap {

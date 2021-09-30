@@ -274,14 +274,15 @@
 }
 
 .mn-watch .watch-box .video-box .r-box .cont-box {
+    position: relative;
     float: left;
 }
 
 .mn-watch .watch-box .video-box .r-box .cont-box img:last-child {
     position: absolute;
-    left: 0;
-    top: 0;
-    padding: 40px 96px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .mn-watch .watch-box .video-box .r-box .info-box {
@@ -655,6 +656,7 @@
 
     .mn-conf .cont-box .title {
         margin: 15px 0 10px;
+        font-size: 12px;
     }
 
     .mn-conf .cont-box .subtitle {
@@ -662,14 +664,22 @@
         margin-top: 0;
     }
 
+    .mn-conf .cont-box .content {
+        font-size: 15px;
+    }
+
     .mn-conf .cont-box .plus-box .line {
         width: 100%;
     }
 
-    .mn-conf .cont-box .plus-box > div {
+    .mn-conf .cont-box .plus-box .more-box {
         position: absolute;
         right: 0;
         top: -16px;
+    }
+
+    .mn-conf .cont-box .plus-box .more-box .more {
+        font-size: 14px;
     }
 
     .mn-conf .cont-box .grid-box {
@@ -687,7 +697,7 @@
 
     .mn-story {
         height: 200px;
-        background: #f4f4f4 url(../Images/bg_mb_gray.gif) 120% 0 no-repeat;
+        background: #f4f4f4 url(../Images/bg_mb_gray.gif) 100% 0 no-repeat;
     }
 
     .mn-story .story-box {
@@ -717,7 +727,7 @@
     }
 
     .mn-story .story-box .cont-box .bio-name {
-        font-size: 15px;
+        font-size: 12px;
         position: absolute;
         bottom: 35px;
         margin: 0;
@@ -740,8 +750,8 @@
     }
 
     .mn-watch .watch-box .subject {
-        margin-top: 15px;
-        margin-bottom: 10px;
+        font-size: 23px;
+        margin: 15px 0 10px;
     }
 
     .mn-watch .watch-box .video-box .l-box,
@@ -761,12 +771,36 @@
 
     .mn-watch .watch-box .video-box .r-box {
         float: left;
+        width: 331px;
         margin-top: 40px;
+    }
+
+    .mn-watch .watch-box .video-box .r-box .cont-box {
+        width: 140px;
+    }
+
+    .mn-watch .watch-box .video-box .r-box .cont-box img:first-child{
+        width: 100%
+    }
+
+    .mn-watch .watch-box .video-box .r-box .info-box .title {
+        font-size: 15px;
+    }
+
+    .mn-watch .watch-box > .title {
+        font-size: 12px;
     }
 
     .mn-watch .watch-box > .subTitle,
     .mn-watch .watch-box > .content {
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .mn-watch .watch-box > .plusTap {
+        font-size: 14px;
+        width: 180px;
+        height: 56px;
+        padding: 17px 21px 10px 28px;
     }
 
     .mn-people {
@@ -804,7 +838,12 @@
 
     .mn-comm .comm-box .info-box .title,
     .mn-comm .comm-box .info-box .content {
+        font-size: 20px;
         margin: 20px 0;
+    }
+
+    .mn-comm .comm-box .info-box .content {
+        font-size: 13px;
     }
 
     .mn-comm .comm-box .cont-box {
@@ -813,6 +852,16 @@
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .mn-comm .comm-box .cont-box .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mn-comm .comm-box .cont-box .circle > span {
+        font-size: 16px;
+        line-height: 105px;
     }
 
     .mn-gallery {
