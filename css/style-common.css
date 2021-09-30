@@ -108,6 +108,10 @@ a {
     color: black;
 }
 
+img {
+  width: 100%;
+}
+
 .p-content-title-set {
   font-family: 'Noto Sans CJK KR Bold';
   color: #ff7d5f;
