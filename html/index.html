@@ -7,6 +7,8 @@
   <title>Sit_Main</title>
   <link rel="stylesheet" type="text/css" href="../css/style-common.css">
   <link rel="shortcut icon" href="../Images/favicon.ico">
+  <script defer src="../javascripts/main.js" type="module"></script>
+  <script defer src="../javascripts/nav&footer.js" type="module"></script>
 </head>
 
 <body>
@@ -26,9 +28,43 @@
           <li><a href="#">스토리</a></li>
           <li><a href="#">SIT 소개</a></li>
           <li><a href="#">WATCH</a></li>
-          <li class="search-ico"></li>
+          <li class="search-ico" data-search=""></li>
           <li class="menu-ico"></li>
+          <li class="cancel-ico"></li>
         </ul>
+      </div>
+    </div>
+    <div class="add-wrap">
+      <div class="add-box">
+        <div class="comm-box">
+          <ul>
+            <li><a href="#">소셜이노베이터</a></li>
+            <li><a href="#">참여 기관</a></li>
+          </ul>
+        </div>
+        <div class="story-box">
+          <ul>
+            <li><a href="#">스토리</a></li>
+            <li><a href="#">매거진SIT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <div class="search-box">
+        <form action="#" class="form">
+          <input type="text" name="keyword" placeholder="검색어를 입력하세요." >
+          <input type="image" src="../Images/bt_search.png" alt="submit">
+        </form>
+        <div class="recommend-box">
+          <ul>
+            <li>추천검색어</li>
+            <li><a href="#">청년</a></li>
+            <li><a href="#">도시재생</a></li>
+            <li><a href="#">장애</a></li>
+            <li><a href="#">다문화</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -36,7 +72,7 @@
     <div class="main-wrap">
       <div class="mn-conf">
           <div class="img-box">
-            <img src="../Images/main.png" alt="main-banner">
+            <img src="../Images/main.png" alt="main-banner" class="mn-cvr-img">
             <img src="../Images/main-mobile.png" alt="main-banner-mobile">
           </div>
           <div class="cont-box">
@@ -302,6 +338,8 @@
             <span class="more">more</span>
           </div>
         </div>
+      </div>
+      <div class="mn-awning">
       </div>
     </div>
   </main>

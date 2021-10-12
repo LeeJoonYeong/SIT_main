@@ -4,6 +4,7 @@
     display: flow-root;
     width: 100%;
     background-color: white;
+    position: relative;
 }
 
 .mn-conf {
@@ -611,6 +612,20 @@
     top: 0;
     right: 50px;
 }
+
+.mn-awning {
+    background-color: black;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+}
+
+/* ======================== media query ======================== */
 
 @media screen and (max-width: 1940px) {
 
