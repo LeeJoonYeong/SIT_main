@@ -11,12 +11,12 @@ const category = {
 };
 
 // HTML 태그 변수.
-//const $mn_awning = document.querySelector('.mn-awning');
 import { $mn_awning } from "./main.js";
 
 const $category = document.querySelectorAll('.nav-wrap .category-box ul li a');
 const $search_ico = document.querySelector('.nav-wrap .category-box .search-ico');
 const $cancel_ico = document.querySelector('.nav-wrap .category-box .cancel-ico');
+const $cancel_ico_m = document.querySelector('.search-wrap .search-box .form .cancel-ico');
 const $add_wrap = document.querySelector('.add-wrap');
 const $comm_box = document.querySelector('.add-wrap .add-box .comm-box');
 const $story_box = document.querySelector('.add-wrap .add-box .story-box');
@@ -72,21 +72,39 @@ $add_wrap.addEventListener('mouseleave', () => {
 // 마우스 클릭 시.
 $search_ico.addEventListener('click', () => {
 
+    $cancel_ico.className = 'cancel-ico active';
     $search_ico.style.display = 'none';
-    $cancel_ico.style.display = 'list-item';
     $search_wrap.style.display = 'block';
+
+    // 차양막 활성화.
     $mn_awning.style.display = 'block';
 
-
+    
+    
 })
 
 /* '검색 취소' 아이콘 마우스 이벤트 */
 // 마우스 클릭 시.
 $cancel_ico.addEventListener('click', () => {
 
-    $cancel_ico.style.display = 'none';
+    $cancel_ico.className = 'cancel-ico';
     $search_ico.style.display = 'list-item';
     $search_wrap.style.display = 'none';
+
+    // 차양막 비활성화.
+    $mn_awning.style.display = 'none';
+
+})
+
+/* '검색 취소' 아이콘 마우스 이벤트 (모바일)*/
+// 마우스 클릭 시.
+$cancel_ico_m.addEventListener('click', () => {
+
+    $cancel_ico.className = 'cancel-ico';
+    $search_ico.style.display = 'list-item';
+    $search_wrap.style.display = 'none';
+
+    // 차양막 비활성화.
     $mn_awning.style.display = 'none';
 
 })

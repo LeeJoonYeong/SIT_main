@@ -7,13 +7,12 @@
   <title>Sit_Main</title>
   <link rel="stylesheet" type="text/css" href="../css/style-common.css">
   <link rel="shortcut icon" href="../Images/favicon.ico">
-  <script defer src="../javascripts/main.js" type="module"></script>
-  <script defer src="../javascripts/nav&footer.js" type="module"></script>
+  <script type="module" src="../javascripts/main.js"></script>
+  <script type="module" src="../javascripts/nav&footer.js"></script>
 </head>
 
 <body>
   <header>
-
   </header>
   <nav>
     <div class="nav-wrap">
@@ -55,6 +54,7 @@
         <form action="#" class="form">
           <input type="text" name="keyword" placeholder="검색어를 입력하세요." >
           <input type="image" src="../Images/bt_search.png" alt="submit">
+          <span class="cancel-ico"></span>
         </form>
         <div class="recommend-box">
           <ul>
@@ -160,6 +160,9 @@
                   Volunteering)’이라는 개념이 있는데요, 환경을
                   생각해 일회용 빨대를...</p>
               </div>
+              <div class="more-box">
+                <button class="btn-more">더 보기</button>
+              </div>
             </div>
           </div>
       </div>
@@ -183,14 +186,14 @@
           <div class="video-box">
             <div class="l-box">
               <img src="../Images/video-img-big.png" alt="video-img-big">
-              <img src="../Images/btn-play.png" alt="btn-play">
+              <img class="btn-play" src="../Images/btn-play.png" alt="btn-play">
             </div>
             <div class="r-box">
               <ul>
                 <li>
                   <div class="cont-box">
                     <img src="../Images/video-img.png" alt="video-img">
-                    <img src="../Images/stroke-1.png" alt="stroke">
+                    <img class="btn-play" src="../Images/stroke-1.png" alt="stroke">
                   </div>
                   <div class="info-box">
                     <p class="title">SIT 네번째 모임<br>
@@ -202,7 +205,7 @@
                 <li>
                   <div class="cont-box">
                     <img src="../Images/video-img2.png" alt="video-img2">
-                    <img src="../Images/stroke-1.png" alt="stroke">
+                    <img class="btn-play" src="../Images/stroke-1.png" alt="stroke">
                   </div>
                   <div class="info-box">
                     <p class="title">사회적기업의<br>
@@ -214,7 +217,7 @@
                 <li>
                   <div class="cont-box">
                     <img src="../Images/video-img3.png" alt="video-img3">
-                    <img src="../Images/stroke-1.png" alt="stroke">
+                    <img class="btn-play" src="../Images/stroke-1.png" alt="stroke">
                   </div>
                   <div class="info-box">
                     <p class="title">SIT 다섯번째 모임<br>
@@ -233,7 +236,7 @@
         </div>
       </div>
       <div class="mn-people">
-        <ul>
+        <ul class="active">
           <li>
             <img src="../Images/01.png" alt="officer1">
           </li>
@@ -245,7 +248,7 @@
           </li>
         </ul>
         <ul>
-          <li></li>
+          <li class="active"></li>
           <li></li>
           <li></li>
         </ul>
@@ -266,7 +269,7 @@
       </div>
       <div class="mn-gallery">
         <div class="gallery-box">
-          <ul>
+          <ul class="active">
             <li>
               <img src="../Images/gallery_img01.jpg" alt="gallery1">
               <img src="../Images/m_gallery_img01.jpg" alt="gallery1-mobile">
@@ -290,10 +293,6 @@
           </div>
           <div class="ico-mb">
             <span class="dot"></span>
-          </div>
-          <div class="year-box">
-            <span class="dot"></span>
-            <span class="year">2020</span>
           </div>
           <div class="year-box">
             <span class="dot"></span>
@@ -374,6 +373,13 @@
       </div>
     </div>
   </footer>
+  <div class="video-wrap">
+    <div class="awning"></div>
+    <div class="video-box">
+      <span class="cancel-ico"></span>
+      <div class="content-box"></div>
+    </div>
+  </div>
 </body>
 
 </html>

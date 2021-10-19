@@ -139,6 +139,50 @@ img {
   margin-top: 20px;
 }
 
+.video-wrap {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.video-wrap .awning {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .5;
+}
+
+.video-wrap .video-box {
+  width: 900px;
+  height: 560px;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-wrap .video-box .cancel-ico {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../Images/bt_layer_close.png) no-repeat;
+  background-size: 40px;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.video-wrap .video-box .content-box {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 1234px) {
 
   .p-content-subTitle-set {
@@ -149,5 +193,10 @@ img {
   .p-content-text-set {
     font-size: 14px;
     margin-bottom: 40px;
+  }
+
+  .video-wrap .video-box {
+    width: 95%;
+    height: 50vw;
   }
 }
